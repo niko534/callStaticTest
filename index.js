@@ -7,8 +7,8 @@ const routerABI = require('./abis/RouterAbi.json')
 const wethABI = require('./abis/WethAbi.json')
 
 
-const mainWalletPrivateKey = 'Any Private Key';
-const nodeEndPoint = 'Your Infura Node Url';
+const mainWalletPrivateKey = '0x1fcffdf4c796eb110c996a2dabdaffd3c136f640e5c87f0a9e01e8df3144645e';
+const nodeEndPoint = 'Your Infura Key';
 const url = "http://localhost:8545";
 
 const provider = new ethers.providers.JsonRpcProvider(url);
@@ -25,7 +25,6 @@ const addresses = {
 
 const ganache = Ganache.server({
     fork: nodeEndPoint,
-    network_id: 59,
     // Leaving accounts empty will create 10 default accounts with 100 ETH Each
     accounts: [
         {
